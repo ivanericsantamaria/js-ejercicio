@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript/jquery-3.5.1.min.js"></script>
     <script src="javascript/javascript.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
@@ -12,13 +11,44 @@
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
     
-    <input type="text" name="input1" id="valor1">
-    <a class="badge badge-primary text-wrap, text-white">+</a>
-    <input type="text" name="input2" id="valor2">
-    <button onclick="funcion()" type="button" class="btn btn-primary">Dale</button>
-    <span id="resultado1"></span>
+    <article>
+        <input type="text" name="input1" id="valor1">
+        <a class="badge badge-primary text-wrap, text-white">+</a>
+        <input type="text" name="input2" id="valor2">
+        <button onclick="funcion1()" type="button" class="btn btn-primary">Dale</button>
+        <button onclick="funcion2()" type="button" class="btn btn-secondary">50%</button>
+        <span id="resultado1"></span>
+        <span id="resultado2"></span>
+    
+    </article>  
+
+    <article>
+        <input type="text" name="input3" id="valor3">
+        <label for="combo">Porcentaje:</label>
+        <select id="combo">
+            <option value="10">10%</option>
+            <option value="20">20%</option>
+            <option value="30">30%</option>
+            <option value="40">40%</option>
+            <option value="50">50%</option>
+            <option value="60">60%</option>
+            <option value="70">70%</option>
+            <option value="80">80%</option>
+            <option value="90">90%</option>
+            <option value="100">100%</option>
+        </select>
+        <button onclick="funcion4()" type="button" class="btn btn-secondary">Dale</button>
+        <span id="resultado3"></span>
+    </article>
+    
+    
+    
+    
+    
+    
+    
 
 </body>
 </html>
