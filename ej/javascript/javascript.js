@@ -5,10 +5,14 @@ function funcion1 () {
     var y = document.getElementById("valor2").value.trim();
     var suma = parseFloat (x)+ parseFloat (y);
     
-    if (x==""){
+    if (x==""){ 
         x=0;
     }
     
+    if (y == "") {
+        y = 0;
+    }
+
     if (y==""){
         y=0;
     }
@@ -46,7 +50,7 @@ function funcion2 () {
         y=0;
     }
     
-    var porcentaje = funcion3(suma,50); 
+    var porcentaje = funcionPorcentaje(suma,50); 
     
     
     document.getElementById("resultado2").textContent=porcentaje;
@@ -67,15 +71,77 @@ function funcion2 () {
     }
 
 }
-function funcion3 (valor,porcentaje) {
+function funcionPorcentaje (valor,porcentaje) {
     var resultado = valor * porcentaje / 100;
     return resultado;
 }
 
-function funcion4 () {
+function porcentajeCombo () {
     var numero = parseInt(document.getElementById("valor3").value.trim())
     var porcentajeElegido = parseInt(document.getElementById("combo").value)
-    var porc = funcion3 (numero,porcentajeElegido);
+    var porc = funcionPorcentaje (numero,porcentajeElegido);
     document.getElementById("resultado3").textContent=porc;
 }
 
+
+
+function funcionNumero1 () {
+    var n1= parseFloat(document.getElementById("numero1").value.trim())
+    
+    document.getElementById("numero1span").textContent=n1;
+    
+    if (n1<0) {
+        alert("x");
+    }
+}
+
+function funcionNumero2 () {
+    var n2= parseFloat(document.getElementById("numero2").value.trim())
+    
+    document.getElementById("numero2span").textContent=n2;
+    
+    if (n2<=10 && n2 >=0) {
+        alert("x");
+    }
+}
+
+function funcionNumero3 () {
+    var n3= parseFloat(document.getElementById("numero3").value.trim())
+    
+    document.getElementById("numero3span").textContent=n3;
+    
+    if (n3!=10 && n3!=20 && n3!=45) {
+        alert("x");
+    }
+}
+
+function funcionNumero4 () {
+    var n4= parseFloat(document.getElementById("numero4").value.trim())
+    
+    document.getElementById("numero4span").textContent=n4;
+    
+    if (n4<10 || n4>20) {
+        alert("x");
+    }
+}
+
+function funcionNumero5 () {
+    var n5= parseFloat(document.getElementById("numero5").value.trim())
+    
+    document.getElementById("numero5span").textContent=n5;
+    
+    if (n5>0 && n5<10 || n5>30 && n5<95 || n5>95 && n5<100) {
+        alert("x");
+    }
+}
+
+function funcionNumero6 () {
+    var n6= parseFloat(document.getElementById("numero6").value.trim())
+    
+    document.getElementById("numero6span").textContent=n6;
+    
+    if (n6 % 2 == "0"){
+        alert("x");
+    }
+    
+}
