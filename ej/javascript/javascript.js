@@ -143,5 +143,39 @@ function funcionNumero6 () {
     if (n6 % 2 == "0"){
         alert("x");
     }
-    
+   
 }
+
+function funcionPalabra () {
+    var palabra= document.getElementById("palabra").value;
+    
+   
+    for(palabra=0; palabra<20; palabra++){
+        document.getElementById("spanPalabra").textContent=palabra;
+    }
+
+}
+
+
+
+
+
+
+
+/*
+
+for (#) {
+
+}
+en el (#) debe indicarse en que punto debe empezar, en que punto tiene que terminar, que pasos debe dar
+
+var x
+
+for(x=0 ; x<10; x++)  va a comenzar en 0 y terminar en el ultimo numero en el que x sea menor a 10 y x se va a aumentar en 1 
+
+for(x=0 ; x<10; x+=4)  
+cada vez que se reporduzaca el bucle x se va a aumentar en 4
+en el primero x 
+
+
+*/
